@@ -1,4 +1,4 @@
-import StopWatch from ' ./stopwatch.js ';
+import StopWatch from './stopwatch.js ';
 import StopwatchUI from ' ./stopwatch-ui.js ';
 
 const initialTime = {hours: 0, minutes: 0, seconds: 0};
