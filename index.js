@@ -10,6 +10,7 @@ ui.addStartBtnListener(e => stopwatch.start());
 ui.addPauseBtnListener(e => stopwatch.pause());
 ui.addResetBtnListener(e => stopwatch.reset());
 
-const parentElement = document.getElementById("myParentElement");
-ui.appendStopwatch(parentElement);
+//const parentElement = document.getElementById("myParentElement");
+//ui.appendStopwatch(parentElement);
 
+ui.appendStopwatch(document.body);
