@@ -10,6 +10,7 @@ export default class StopwatchUI {
         this.resetButton = document.createElement('button');
 
         let formattedHours = String(this.hours).padStart(2, '0');
+        console.log(formattedHours);
         let formattedMinutes = String(this.minutes).padStart(2, '0');
         let formattedSeconds = String(this.seconds).padStart(2, '0');
 

@@ -39,7 +39,7 @@ export default class StopWatch {
         this.hours = 0;
         this.minutes = 0;
         this.seconds = 0;
-        this.setTime({hours: 0, minutes: 0, seconds: 0});
+        this.setTime();
     }
 
     getTime() {
