@@ -43,9 +43,7 @@ export default class StopwatchUI {
         this.minutes = time.minutes;
         this.seconds = time.seconds;
 
-        this.formattedHours = String(this.hours).padStart(2, '0');
-        this.formattedMinutes = String(this.minutes).padStart(2, '0');
-        this.formattedSeconds = String(this.seconds).padStart(2, '0');
+        
     
         this.timer.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
     }
