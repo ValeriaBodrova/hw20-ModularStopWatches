@@ -1,8 +1,8 @@
 export default class StopwatchUI {
     constructor(initialTime) {
-        this.hours = initialTime.hours;
-        this.minutes = initialTime.minutes;
-        this.seconds = initialTime.seconds;
+        this.hours = initialTime().hours;
+        this.minutes = initialTime().minutes;
+        this.seconds = initialTime().seconds;
 
         this.timer = document.createElement('div');
         this.startButton = document.createElement('button');

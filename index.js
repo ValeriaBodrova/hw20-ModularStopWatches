@@ -1,7 +1,15 @@
 import StopWatch from '../stopwatch.js ';
 import StopwatchUI from '../stopwatch-ui.js ';
 
-const initialTime = {hours: 0, minutes: 0, seconds: 0};
+
+function initialTime(time) {
+    const hours = String(time.hours).padStart(2, '0');
+    const minutes = String(time.minutes).padStart(2, '0');
+    const seconds = String(time.seconds).padStart(2, '0');
+    
+    display.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
 const ui = new StopwatchUI(initialTime);
 const onTick = (time) => ui.setTime(time);
 const stopwatch = new StopWatch(onTick);
