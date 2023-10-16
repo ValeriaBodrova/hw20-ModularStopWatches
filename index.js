@@ -1,5 +1,5 @@
-import StopWatch from '../stopwatch.js';
-import StopwatchUI from '../stopwatch-ui.js';
+import StopWatch from './modules/stopwatch.js';
+import StopwatchUI from './modules/stopwatch-ui.js';
 
 const initialTime = {hours: 0, minutes: 0, seconds: 0};
 const ui = new StopwatchUI(initialTime);
