@@ -9,7 +9,7 @@ export default class StopwatchUI {
         this.pauseButton = document.createElement('button');
         this.resetButton = document.createElement('button');
 
-        this.timer.textContent = `${this.hours}:${this.minutes}:${this.seconds}`;
+        this.timer.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
         this.startButton.textContent = "Start";
         this.pauseButton.textContent = "Pause";
         this.resetButton.textContent = "Reset";
