@@ -39,7 +39,7 @@ export default class StopWatch {
         this.hours = 0;
         this.minutes = 0;
         this.seconds = 0;
-        this.setTime();
+        this.onTick(this.getTime());
     }
 
     getTime() {
@@ -49,17 +49,7 @@ export default class StopWatch {
             seconds: this.seconds
         };
     }
-    setTime(time) {
-        this.hours = time.hours;
-        this.minutes = time.minutes;
-        this.seconds = time.seconds;
 
-        let formattedHours = String(this.hours).padStart(2, '0');
-        let formattedMinutes = String(this.minutes).padStart(2, '0');
-        let formattedSeconds = String(this.seconds).padStart(2, '0');
-    
-        this.timer.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
-    }
 }
 
 
