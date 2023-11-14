@@ -1,5 +1,6 @@
 #myParentElement{
-    margin: 0 auto;
+    position: relative;
+    justify-content: center;
 }
 h1{
     text-align: center;
