@@ -1,6 +1,5 @@
 .main{
-    position: relative;
-    justify-content: center;
+   margin: 0 auto;
 }
 h1{
     text-align: center;
