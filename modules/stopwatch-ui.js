@@ -5,8 +5,7 @@ export default class StopwatchUI {
         this.seconds = initialTime.seconds;
 
         this.timer = document.createElement('div');
-        this.timer.classList.add('main');
-        document.body.appendChild(this.timer);
+        timer.style.margin = '0 auto';
         this.startButton = document.createElement('button');
         this.pauseButton = document.createElement('button');
         this.resetButton = document.createElement('button');
